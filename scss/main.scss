@@ -12,6 +12,8 @@ $Almost-Black: hsl(0, 0%, 8%);
     margin: 0;
     box-sizing: border-box;
     font-family: 'Epilogue', sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
 body{
@@ -23,6 +25,64 @@ body{
             height: 15vh;
             padding: 45px;
             display: flex;
+            justify-content: space-between;
             align-items: center;
+                .logo{               
+                    width: 100%;
+                    max-width: 10rem;
+                }
+                nav{
+                    width: 100%;
+                    max-width: 35rem;
+                    color: $Medium-Gray;
+                        ul{
+                            display: flex;
+                            justify-content: space-evenly;
+                            width: 100%;
+                            max-width: 35rem;
+                            font-size: 1.25rem;
+                        }
+                        a{
+                            color: $Medium-Gray;
+                        }
+                        li{
+                            cursor: pointer;
+                            transition: 0.4s;
+                            &:hover{
+                                color: $Almost-Black;
+                            }
+                        }
+                }
+                .login{
+                    width: 100%;
+                    max-width: 12rem;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    color: $Medium-Gray;
+                        .btn-register{
+                            width: 100%;
+                            max-width: 7rem;
+                            height: 3rem;
+                            border-radius: 0.90rem;
+                            background-color: $Almost-White;
+                            color: $Medium-Gray;
+                            font-size: 0.96rem;
+                            transition: 0.4s;
+                            cursor: pointer;
+                                &:hover{
+                                    background-color: $Almost-Black;
+                                    transform: scale(1.04);
+                                    color: $Almost-White;
+                                }
+                        }
+                        .login-login{
+                            color: $Medium-Gray;
+                            transition: 0.4s;
+                                &:hover{
+                                    color: $Almost-Black;
+                                }
+                        }
+                }
         }
 }

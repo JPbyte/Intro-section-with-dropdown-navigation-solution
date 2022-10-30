@@ -4,6 +4,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Epilogue", sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
@@ -16,5 +18,63 @@ body header {
   height: 15vh;
   padding: 45px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+body header .logo {
+  width: 100%;
+  max-width: 10rem;
+}
+body header nav {
+  width: 100%;
+  max-width: 35rem;
+  color: hsl(0deg, 0%, 41%);
+}
+body header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 35rem;
+  font-size: 1.25rem;
+}
+body header nav a {
+  color: hsl(0deg, 0%, 41%);
+}
+body header nav li {
+  cursor: pointer;
+  transition: 0.4s;
+}
+body header nav li:hover {
+  color: hsl(0deg, 0%, 8%);
+}
+body header .login {
+  width: 100%;
+  max-width: 12rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: hsl(0deg, 0%, 41%);
+}
+body header .login .btn-register {
+  width: 100%;
+  max-width: 7rem;
+  height: 3rem;
+  border-radius: 0.9rem;
+  background-color: hsl(0deg, 0%, 98%);
+  color: hsl(0deg, 0%, 41%);
+  font-size: 0.96rem;
+  transition: 0.4s;
+  cursor: pointer;
+}
+body header .login .btn-register:hover {
+  background-color: hsl(0deg, 0%, 8%);
+  transform: scale(1.04);
+  color: hsl(0deg, 0%, 98%);
+}
+body header .login .login-login {
+  color: hsl(0deg, 0%, 41%);
+  transition: 0.4s;
+}
+body header .login .login-login:hover {
+  color: hsl(0deg, 0%, 8%);
 }/*# sourceMappingURL=main.css.map */
