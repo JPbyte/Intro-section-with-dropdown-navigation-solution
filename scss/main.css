@@ -29,6 +29,7 @@ body header .logo {
 body header nav {
   width: 100%;
   max-width: 35rem;
+  height: 2vh;
   color: hsl(0deg, 0%, 41%);
 }
 body header nav ul {
@@ -37,6 +38,7 @@ body header nav ul {
   width: 100%;
   max-width: 35rem;
   font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 body header nav a {
   color: hsl(0deg, 0%, 41%);
@@ -48,10 +50,29 @@ body header nav li {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 6.5rem;
+  max-width: 6.2rem;
 }
 body header nav li:hover {
   color: hsl(0deg, 0%, 8%);
+}
+body header nav .todo-list {
+  width: 100%;
+  max-width: 10rem;
+}
+body header nav .todo-list .first {
+  visibility: hidden;
+  background-color: white;
+  height: 19vh;
+  padding: 0.6rem 0rem;
+  border-radius: 0.8rem;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.06);
+}
+body header nav .todo-list .first .show {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 10rem;
 }
 body header .login {
   width: 100%;
@@ -87,6 +108,7 @@ body header .login .login-login:hover {
 body .container {
   display: flex;
   justify-content: space-around;
+  height: 75vh;
 }
 body .container .article {
   width: 100%;
@@ -101,6 +123,7 @@ body .container .article h1 {
 body .container .article .article-p {
   text-align: initial;
   font-size: 1.39rem;
+  line-height: 1.8rem;
   color: hsl(0deg, 0%, 41%);
 }
 body .container .article .btn-main {
