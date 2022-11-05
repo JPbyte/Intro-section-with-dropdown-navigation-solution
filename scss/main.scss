@@ -59,6 +59,10 @@ body{
                                 &:hover{
                                     color: $Almost-Black;
                                 }
+                                .rotate{
+                                    transform: rotate(180deg);
+                                    transition: 0.5s;
+                                }
                         }
                         .todo-list{
                             width: 100%;
@@ -66,12 +70,13 @@ body{
                             display: flex;
                             justify-content: space-between;
                                 .first{
-                                    visibility: hidden;
+                                    opacity: 0;
                                     background-color: white;
                                     height: 19vh;
                                     padding: 0.6rem 1.8rem;
                                     border-radius: 0.8rem;
                                     box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.06);
+                                    transition: 0.5s;
                                         .show{
                                             display: flex;
                                             flex-direction: column;
@@ -79,9 +84,13 @@ body{
                                             align-items: center;
                                             height: 10rem;
                                         }
+                                    
+                                }
+                                .active{
+                                    opacity: 1;
                                 }
                                 .secund{
-                                    visibility: hidden;
+                                    opacity: 0;
                                     background-color: white;
                                     height: 15vh;
                                     padding: 0.6rem 0rem;
@@ -99,6 +108,10 @@ body{
                                             font-size: 1.25rem;
                                             margin-bottom: 1rem;
                                         }
+                                        
+                                }
+                                .active{
+                                    opacity: 1;
                                 }
                         }
                 }
