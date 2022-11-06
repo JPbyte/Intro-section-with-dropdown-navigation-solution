@@ -212,8 +212,12 @@ body{
                 text-decoration: none;
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 padding: 3.8rem 1rem;
                 gap: 1.5rem;
+                a{
+                    color: $Almost-Black;
+                }
                 .show{
                     display: none;
                     flex-direction: column;
@@ -233,6 +237,31 @@ body{
                     justify-content: space-between;
                     height: 5rem;
                 }
+            }
+            .btn-left{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                height: 4rem;
+                    .login-login{
+                        color: $Almost-Black;
+                    }
+                    .btn-register{
+                        width: 100%;
+                        max-width: 7rem;
+                        height: 2rem;
+                        background-color: white;
+                        border-radius: 0.70rem;
+                        border: 1px black solid;
+                        cursor: pointer;
+                        transition: 0.4s;
+                            &:hover{
+                                transform: scale(1.04);
+                                background-color: $Almost-Black;
+                                color: $Almost-White;
+                            }
+                    }
             }
         }
     header{

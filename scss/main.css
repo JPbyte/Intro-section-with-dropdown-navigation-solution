@@ -202,8 +202,12 @@ body .container .img-container .hero {
     text-decoration: none;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 3.8rem 1rem;
     gap: 1.5rem;
+  }
+  body .menu-left .menu-left-nav a {
+    color: hsl(0deg, 0%, 8%);
   }
   body .menu-left .menu-left-nav .show {
     display: none;
@@ -223,6 +227,31 @@ body .container .img-container .hero {
     flex-direction: column;
     justify-content: space-between;
     height: 5rem;
+  }
+  body .menu-left .btn-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+  }
+  body .menu-left .btn-left .login-login {
+    color: hsl(0deg, 0%, 8%);
+  }
+  body .menu-left .btn-left .btn-register {
+    width: 100%;
+    max-width: 7rem;
+    height: 2rem;
+    background-color: white;
+    border-radius: 0.7rem;
+    border: 1px black solid;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  body .menu-left .btn-left .btn-register:hover {
+    transform: scale(1.04);
+    background-color: hsl(0deg, 0%, 8%);
+    color: hsl(0deg, 0%, 98%);
   }
   body header nav {
     display: none;
