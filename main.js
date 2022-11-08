@@ -23,12 +23,15 @@ company.addEventListener("click", () => {
 
 const menu = document.querySelector(".menu-i")
 const x = document.querySelector(".x")
+const left = document.querySelector(".menu-left")
+
 
 menu.addEventListener("click", () => {
     
     if (menu) {
         menu.style.display = "none"
         x.style.display = "flex"
+        left.style.display = "flex"
     }
 })
 
@@ -37,5 +40,6 @@ x.addEventListener("click", () => {
     if(x){
         menu.style.display = "flex"
         x.style.display = "none"
+        left.style.display = "none"
     }
 })

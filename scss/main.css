@@ -13,6 +13,9 @@ body {
   min-height: 100vh;
   background-color: hsl(0deg, 0%, 98%);
 }
+body .menu-left {
+  display: none;
+}
 body header {
   width: 100%;
   height: 15vh;
@@ -191,7 +194,8 @@ body .container .img-container .hero {
 @media (max-width: 375px) {
   body .menu-left {
     content: "";
-    visibility: visible;
+    display: none;
+    flex-direction: column;
     position: absolute;
     width: 40%;
     height: 100%;
