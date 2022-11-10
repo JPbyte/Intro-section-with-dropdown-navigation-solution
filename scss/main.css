@@ -197,7 +197,7 @@ body .container .img-container .hero {
     display: none;
     flex-direction: column;
     position: absolute;
-    width: 40%;
+    width: 45%;
     height: 100%;
     background-color: white;
     z-index: 1;
@@ -206,12 +206,15 @@ body .container .img-container .hero {
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 3.8rem 1rem;
     gap: 1.5rem;
   }
   body .menu-left .menu-left-nav a {
     color: hsl(0deg, 0%, 8%);
+  }
+  body .menu-left .menu-left-nav .rotate {
+    transform: rotate(180deg);
+    transition: 0.5s;
   }
   body .menu-left .menu-left-nav .show {
     display: none;
@@ -226,11 +229,24 @@ body .container .img-container .hero {
     transform: scale(1.02);
     color: black;
   }
+  body .menu-left .menu-left-nav .active1 {
+    display: flex;
+  }
   body .menu-left .menu-left-nav .show2 {
     display: none;
     flex-direction: column;
     justify-content: space-between;
     height: 5rem;
+  }
+  body .menu-left .menu-left-nav .show2 a {
+    cursor: pointer;
+  }
+  body .menu-left .menu-left-nav .show2 a:hover {
+    transform: scale(1.02);
+    color: black;
+  }
+  body .menu-left .menu-left-nav .active1 {
+    display: flex;
   }
   body .menu-left .btn-left {
     display: flex;
