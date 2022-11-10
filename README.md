@@ -34,8 +34,8 @@ Desktop design
 
 ### Links
 
-- Solution URL: [Intro section with dropdown navigation solution]()
-- Live Site URL: [Add live site URL here]()
+- Solution URL: [Intro section with dropdown navigation solution](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-solution-toz4kZSoMe)
+- Live Site URL: [Add live site URL here](https://jpbyte.github.io/Intro-section-with-dropdown-navigation-solution/)
 
 ## My process
 
